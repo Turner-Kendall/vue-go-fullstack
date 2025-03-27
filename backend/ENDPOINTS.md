@@ -1,0 +1,5 @@
+[GIN] | 200 | 127.0.0.1 | POST     "/auth/login"
+[GIN] | 200 | 127.0.0.1 | GET      "/users"
+[GIN] | 200 |   127.0.0.1 | POST     "/auth/signup"
+[GIN] | 200 |   127.0.0.1 | POST     "/auth/login"
+[GIN] | 200 |   127.0.0.1 | GET      "/user/profile"
