@@ -1,0 +1,3 @@
+PORT=8080
+DB_URL="host=localhost user=USERNAME password=DBPASSWORD dbname=DBNAME port=5432 sslmode=disable"
+SECRET=your-secret-phrase
