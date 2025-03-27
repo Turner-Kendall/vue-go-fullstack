@@ -1,0 +1,33 @@
+{
+  "name": "full-stack-front-end",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.0.6",
+    "@unhead/vue": "^1.11.14",
+    "@vueuse/core": "^12.3.0",
+    "vue": "^3.5.13",
+    "vue-final-modal": "^4.5.5",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^4.5.0",
+    "vue3-burger-menu": "^1.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "prettier": "^3.3.3",
+    "vite": "^6.0.5",
+    "vite-plugin-vue-devtools": "^7.6.8"
+  }
+}

@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #d24e69 !important;
+}
+
+body {
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.1;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 1.2rem !important;
+  margin-bottom: 0 !important;
+}
+
+h3 {
+  font-size: 1.1rem !important;
+  border-bottom: 1px solid #88888846;
+}
+
+h5 {
+  font-size: .85rem !important;
+  margin: 0 2rem 1.25rem 0 !important;
+  border-bottom: 1px solid #88888846;
+}
+
+h6 {
+  font-size: .8rem !important;
+  margin-bottom: .5rem !important;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0rem;
+  margin-bottom: 1rem;
+}
+
+/* Header St3yles */
+
+.main-header {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 5px;
+  align-items: start;
+  margin: 1rem 0 0 0;
+  min-height: 50px;
+}
+
+div.bm-burger-button {
+  margin-top: -.65rem;
+  margin-left: -1rem;
+  width: 27px !important;
+  height: 22px !important;
+}
+
+.masthead{
+  margin-top: -2px;
+}
+
+header .masthead h1 {
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important;
+  font-weight: 700;
+}
+
+header .masthead h4 {
+  font-size: .8rem !important;
+  margin: 0 0 0 3px !important;
+}
+
+/* Layout Styles */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  margin-bottom: 3rem;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic !important;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #88888846;
+}
+
+.inner-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.inner-col {
+  flex: 3;
+}
+
+.inner-row aside {
+  flex: 1;
+  padding: 1rem;
+}
+
+.pairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: .5rem 0;
+}
+
+.register-link{
+  text-align: right;
+  margin: 0 5px 0 0;
+}
+
+button {
+  padding: .5rem 0;
+}
+
+.login-form button {
+  padding: .5rem 0;
+}
+
+.login-form #password, .login-form #username {
+  height: 2.5rem!important;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: auto max-content; 
+}
+
+/* This is how the Pico.css does dark / light mode */
+
+html[data-theme="light"] a {
+  color: #0969da;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html[data-theme="dark"] a {
+  color: #58a6ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html[data-theme="light"] button {
+  background-color: #aaaaaa;
+  color: #ffffff;
+  border: 1px solid #aaaaaa;
+}
+
+html[data-theme="light"] button:hover {
+  background-color: #888888;
+  color: #ffffff;
+  border: 1px solid #aaaaaa;
+}
+
+html[data-theme="dark"] button {
+  background-color: #0969da;
+  color: #ffffff;
+  border: 1px solid #0969da;
+}
+
+html[data-theme="dark"] button:hover {
+  background-color: #065ec2;
+  border: 1px solid #58a6ff;
+}
+
+html[data-theme="dark"] .dot {
+  color: #fff !important;
+}
+
+html[data-theme="light"] .dot {
+  color: #969696 !important;
+}
+
+/* CSS Breakpoints, still needs attention */
+
+/* Phones */
+@media (max-width: 480px) { 
+
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header .masthead{
+    margin: 2rem 0 0 1.25rem;
+  }
+
+  .menu {
+    flex: 1;
+  }
+
+  .inner-row article,
+  .inner-row aside {
+    padding: 0.5rem;
+  }
+
+  .pairs {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .register-link{
+    text-align: left;
+    margin: -20px 0 10px 5px;
+  }
+
+  .login-form #username {
+    margin-bottom: 0;
+  }
+
+ }
+
+/* Tablets (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) { 
+  .column {
+    flex: 100%;
+  }
+
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header .masthead{
+    margin: 2rem 0 0 1rem;
+  }
+ }
+
+/* Tablets (Landscape) / Small Laptops */
+/* @media (min-width: 769px) and (max-width: 1024px) { ... } */
+
+/* Desktops / Large Screens */
+/* @media (min-width: 1025px) { ... } */
+
+ /* Edge Case */
+ @media (max-width: 768px) {
+  .inner-row {
+    flex-direction: column;
+  }
+
+  header,
+  footer {
+    height: auto;
+  }
+}
