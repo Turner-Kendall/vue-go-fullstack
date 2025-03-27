@@ -52,5 +52,5 @@ I have used !important sparingly, in the notes to try and remove alltogether. Th
 ### Todos
 
 -- make catch all / 404 page 
--- try to remove al !important
+-- try to remove all !important
 -- Remember Me Implimentation
