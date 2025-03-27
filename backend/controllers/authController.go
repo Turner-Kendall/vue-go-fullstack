@@ -113,12 +113,3 @@ func Login(c *gin.Context) {
 		"token": token,
 	})
 }
-
-// func GetUserProfile(c *gin.Context) {
-
-// 	user, _ := c.Get("currentUser")
-
-// 	c.JSON(200, gin.H{
-// 		"user": user,
-// 	})
-// }
