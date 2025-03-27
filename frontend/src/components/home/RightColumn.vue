@@ -1,7 +1,7 @@
 <template>
     <div class="image-container">
       <figure>
-        <img src="/images/vertical-placeholder.webp"
+        <img src="/images/cat.jpg"
           class="vertical-placeholder" alt="Placeholder Image">
         <figcaption>A placeholder image for testing.</figcaption>
       </figure>

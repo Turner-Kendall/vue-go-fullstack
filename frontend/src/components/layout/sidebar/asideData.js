@@ -7,9 +7,9 @@ export const asideData = [
     id: "1",
   },
   {
-    title: "Foundzed Biz",
-    link: "https://biz.foundzed.com/",
-    description: "Business news, articles, and resources for professionals, entrepreneurs, and tech enthusiasts.",
+    title: "Weblog Network",
+    link: "https://weblog.network/",
+    description: "News, articles, and resources for professionals, entrepreneurs, and tech enthusiasts.",
     category: "Dev",
     id: "2",
   },
@@ -26,6 +26,13 @@ export const asideData = [
     description: "The latest Kayso podcast episode features A.I. celebrities, their thoughts abd dreams",
     category: "Media",
     id: "4",
+  },
+  {
+    title: "Turner Kendall on X",
+    link: "https://x.com/turnerkendall3",
+    description: "X is the only social media platform that I use. I post about tech, entrepreneurship, and my projects.",
+    category: "Social Media",
+    id: "5",
   },
 
 ];

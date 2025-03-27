@@ -10,4 +10,6 @@ If you want to run this yourself the first thing that you will want to do is ren
 
 There is likewise a [README](/frontend/README.md) in the frontend directory that should help you get the Vue frontend running.
 
+![Alt Text](vue-go-fullstack.png)
+
 If you have any other questions, need some help getting this up and running, etc. feel free to reach out to me - tk@turnerkendall.com
