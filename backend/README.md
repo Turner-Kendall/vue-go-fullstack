@@ -15,7 +15,7 @@
 
 ### **5.** curl localhost:8080
 
-You can [View the endpoints here](ENDPOINTS.md)
+You can [View the endpoints here](../docs/ENDPOINTS.md)
 
 ---
 
