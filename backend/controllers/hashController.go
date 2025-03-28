@@ -3,19 +3,33 @@ package controllers
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"log"
 
 	"github.com/gin-gonic/gin"
 )
 
-func HashString(i string) string {
-	hasher := md5.New()             // Create a new MD5 hash generator
-	hasher.Write([]byte(i))         // Write the input string as bytes to the hasher
-	hash := hasher.Sum(nil)         // Finalize the hash and get the result as a byte slice
-	return hex.EncodeToString(hash) // Convert the byte slice to a hexadecimal string
+func hashString(i string) string {
+	hasher := md5.New()
+	hasher.Write([]byte(i))
+	hash := hasher.Sum(nil)
+	return hex.EncodeToString(hash)
+}
+
+// Struct to bind JSON input
+type HashRequest struct {
+	Input string `json:"input"`
 }
 
 func GetHash(c *gin.Context) {
-	input := c.Query("input")
-	hash := HashString(input)
+	var req HashRequest
+
+	// Try to bind JSON body
+	if err := c.ShouldBindJSON(&req); err != nil {
+		log.Println("Error binding JSON:", err)
+		c.JSON(400, gin.H{"error": "Invalid request"})
+		return
+	}
+
+	hash := hashString(req.Input)
 	c.JSON(200, gin.H{"hash": hash})
 }

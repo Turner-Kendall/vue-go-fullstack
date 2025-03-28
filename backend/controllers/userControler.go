@@ -11,6 +11,7 @@ import (
 )
 
 // Get the current user from the context
+// https://github.com/gin-gonic/gin/blob/master/context.go
 func GetUserProfile(c *gin.Context) {
 
 	user, exists := c.Get("currentUser")
@@ -65,6 +66,7 @@ func ListUsers(c *gin.Context) {
 	})
 }
 
+// delete user by username
 func DeleteUser(c *gin.Context) {
 
 	var delInput models.DelInput
@@ -87,6 +89,7 @@ func DeleteUser(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "user deleted"})
 }
 
+// update user password by username
 func ResetPassword(c *gin.Context) {
 	var resetInput models.ResetInput
 

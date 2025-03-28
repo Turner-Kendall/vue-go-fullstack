@@ -162,3 +162,6 @@ sudo systemctl list-units | grep postgresql
 sudo journalctl -u postgresql
 
 
+### Todos
+
+-- change Go dependencies to reflect new Github repository - and TEST! 
