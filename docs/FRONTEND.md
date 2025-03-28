@@ -22,7 +22,6 @@ npm run build
 npm run lint
 ```
 
-
 ### Pico overides 
 ###### Use More Specific Selectors
 Like most frameworks Pico uses generic class names. To override them, I have attempted increase specificity:
@@ -31,9 +30,9 @@ Like most frameworks Pico uses generic class names. To override them, I have att
 /* Framework has: */
 .btn { margin:0; }
 
-/* You override with: */
+/* You can override with: */
 .custom-btn { margin:0 1rem; }  /* Preferred */
-button.btn { margin:0 1rem; }   /* More specific */
+button.btn { margin:0 1rem; }   /* More specific but not foolproof */
 ```
 If necessary, use **element + class combos** or **nested selectors**.
 
@@ -52,5 +51,5 @@ I have used !important sparingly, in the notes to try and remove alltogether. Th
 ### Todos
 
 -- make catch all / 404 page 
--- try to remove all !important
+-- Remove all !important in the CSS file where possible
 -- Remember Me Implimentation

@@ -6,9 +6,9 @@ This repository represents the combination of my previous gapi backend and gAuth
 
 This is what I use as a starting point for new full stack projects.  It provides a working frontend and backend - with user auth, (postgres) database connection, etc.
 
-If you want to run this yourself the first thing that you will want to do is rename the env file to .env and fill in the appropriate information for your database. There is a [README](/backend/README.md) file in the backend subdirectory that explains this in more depth as well as some tips for getting Postgres setup.  You can see how a user sign up / login should work [via these images.](/docs/API.md)
+If you want to run this yourself the first thing that you will want to do is rename the env file to .env and fill in the appropriate information for your database. There is a [README](/docs/BACKEND.md) file for the backend that explains this in more depth as well as some tips for getting Postgres setup.  You can see how a user sign up / login should work [via these images.](/docs/API.md)
 
-There is likewise a [README](/frontend/README.md) in the frontend directory that should help you get the Vue frontend running.
+There is likewise a [README](/docs/FRONTEND.md) for the frontend that should help you get the Vue frontend running.
 
 ![Alt Text](/img/vue-go-fullstack.png)
 
