@@ -22,14 +22,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 1.33rem;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
 h2 {
   font-size: 1.2rem !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
 }
 
 h3 {
   font-size: 1.1rem !important;
   border-bottom: 1px solid #88888846;
+}
+
+h4 {
+  font-size: 1rem !important;
+  margin: 0 2rem 1.25rem 0 !important;
 }
 
 h5 {
@@ -69,18 +80,11 @@ div.bm-burger-button {
 }
 
 .masthead{
-  margin-top: -2px;
-}
-
-header .masthead h1 {
-  font-size: 1.5rem !important;
-  margin-bottom: 0 !important;
-  font-weight: 700;
+  margin-top: -5px;
 }
 
 header .masthead h4 {
-  font-size: .8rem !important;
-  margin: 0 0 0 3px !important;
+  margin: -20px 0 0 5px !important;
 }
 
 /* Layout Styles */

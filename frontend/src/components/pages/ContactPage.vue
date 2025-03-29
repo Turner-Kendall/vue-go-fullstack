@@ -3,9 +3,8 @@
   <article>
 
     <header>
-      <h6>Thanks for stopping by. We are happy to hear from everyone - so if you are a reader, have a site you would
-        like to add to the network, would like to advertise on the network, or for any other reason - feel free to
-        drop us a line.</h6>
+      <h6>Thanks for stopping by. I'm happy to hear from everyone - so - feel free to
+        drop me a line.</h6>
     </header>
 
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">

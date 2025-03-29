@@ -1,30 +1,80 @@
 <template>
   <div class="about">
-    <h2>About the Weblog.Network</h2>
+    <h2>About The Vue-Go-Full Stack Front End</h2>
     <p>
-      The Weblog.Network is a collection of blogs and websites that are dedicated to providing an alternative to the
-      mainstream media. Our goal is to provide a platform for independent journalists, bloggers, and content creators to
-      share their work with the world. This site is the flagship site of the Weblog.Network and is dedicated to
-      providing news, analysis, and commentary on a wide range of topics.
+      😼 Hey Now!
     </p>
-    <h3>Our Mission</h3>
     <p>
-      Our mission is to provide a platform for independent journalists, bloggers, and content creators to share their
-      work with the world. We believe that the mainstream media is failing to provide the public with the information
-      they need to make informed decisions. We aim to fill that gap by providing a platform for independent voices to be
-      heard.
+      This is what I use as a starting point for new full stack projects.
+      It provides a working frontend that is instended to be used with the
+      backend
+      <a href="https://github.com/Turner-Kendall/vue-go-fullstack/blob/main/README.md">in the same repository</a>
+      - with user auth, (postgres) database connection, etc.
     </p>
-    <h3>Our Values</h3>
+
+    <h3>Vue3 and Pico.css</h3>
     <p>
-      We believe in the power of independent journalism to hold the powerful accountable and to shine a light on
-      important issues that are often ignored by the mainstream media. We believe in the importance of free speech and
-      open debate, and we are committed to providing a platform for a wide range of voices and perspectives.
+      The front end is built with Vue3 with the composition API and Pico.css.
+      The goal is to provide a simple, fast, and responsive user interface that is easy to use
+      and navigate. It's built with vite and simple to get up and running:
     </p>
-    <h3>Join Us!</h3>
+
+
+    <ul>
+      <li>
+        <pre><code>npm install</code></pre>
+      </li>
+      <li>
+        <pre><code>npm run dev</code></pre>
+      </li>
+      <li>
+        <pre><code>Open <a href=" http://localhost:5173/"> http://localhost:5173/</a> in your browser</code></pre>
+      </li>
+      <li>
+        <pre><code><a href="Open http://localhost:5173/__devtools__/<">Open http://localhost:5173/__devtools__/</a></code></pre>
+      </li>
+    </ul>
+
+    <h3>Pico overides</h3>
     <p>
-      If you are an independent journalist, blogger, or content creator who is interested in joining the Weblog.Network,
-      please contact. We are always looking for new voices to add to our network, and we would love to hear from you!
+      Like most frameworks Pico uses generic class names. To override them, I have attempted increase specificity:
     </p>
+    <pre>
+      <code>
+  /* Framework has: */
+  .btn { margin:0; }
+
+  /* You can override with: */
+  .custom-btn { margin:0 1rem; }  /* Preferred */
+  button.btn { margin:0 1rem; }   /* More specific but not foolproof */
+      </code>
+    </pre>
+
+    <p>
+      If necessary, <strong>use element + class</strong> combos or nested selectors.</p>
+    <p>I have used !important sparingly, in the notes to try and remove alltogether. The most aggresive approach ( which
+      I have removed now ) is
+    </p>
+
+    <pre>
+      <code>
+  .btn {
+  all: unset;
+  display: inline-block;
+  padding: 10px 20px;
+  }
+      </code>
+    </pre>
+
+  <h3>
+    Todos
+  </h3>
+
+  <ul>
+    <li>make catch all / 404 page</li>
+    <li>Remove all !important in the CSS file where possible</li>
+    <li>Remember Me Implimentation</li>
+    </ul>
   </div>
 </template>
 
