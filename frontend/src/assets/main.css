@@ -130,12 +130,7 @@ blockquote {
   padding: 1rem;
 }
 
-.pairs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: .5rem 0;
-}
+
 
 .register-link{
   text-align: right;
@@ -229,8 +224,10 @@ html[data-theme="light"] .dot {
 
   .pairs {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
+
 
   .register-link{
     text-align: left;
@@ -263,7 +260,14 @@ html[data-theme="light"] .dot {
 /* @media (min-width: 769px) and (max-width: 1024px) { ... } */
 
 /* Desktops / Large Screens */
-/* @media (min-width: 1025px) { ... } */
+@media (min-width: 1025px) { 
+  .pairs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: .5rem 0;
+  }
+ }
 
  /* Edge Case */
  @media (max-width: 768px) {

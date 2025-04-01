@@ -4,7 +4,7 @@ export const footerSections = [
     links: [
       { title: "Home", link: "/", id: "1" },
       { title: "About", link: "/page/about", id: "2" },
-      { title: "Signup", link: "/page/login", id: "3" },
+      { title: "Signup", link: "/register", id: "3" },
       { title: "Contact", link: "/page/contact", id: "4" }
     ],
   },
